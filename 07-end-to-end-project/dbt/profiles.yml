@@ -1,0 +1,21 @@
+networkrail:
+  target: dbt_boonthicha
+
+  outputs:
+    dbt_boonthicha:
+      type: bigquery
+      method: service-account
+      project: deb-1-by-skooldio
+      dataset: dbt_boonthicha
+      threads: 1
+      keyfile: /Users/bsaejia/data-engineering-bootcamp/07-end-to-end-project/dags/deb-1-by-skooldio-02-bigquery.json
+      location: asia-southeast1
+
+    prod:
+      type: bigquery
+      method: service-account
+      project: deb-1-by-skooldio
+      dataset: networkrail
+      threads: 1
+      keyfile: /Users/bsaejia/data-engineering-bootcamp/07-end-to-end-project/dags/deb-1-by-skooldio-02-bigquery.json
+      location: asia-southeast1

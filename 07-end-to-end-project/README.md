@@ -19,3 +19,5 @@
 
 Put your DBT project in "dbt" folder
 1. ```poetry install```
+2. ```poetry shell``` should you could reduce command ```poetry run```
+3. ```mkdir /Users/bsaejia/.dbt```
